@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.logo{
+    font-family:'Courier New', Courier, monospace ;
+    font-size: 33px;
+    font-weight: 700;
+    color: white;
+}
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 19px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+
+.hero{
+    height: 100;
+    width: 100;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    /* background-color: deepskyblue; */
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 10rem;
+}
+
+section{
+    padding: 0 13%;
+}
+
+.hero-text h2{
+    font-family: serif;
+    font-size: 53px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero-text p{
+    font-size: 23px;
+    color: white;
+    margin-bottom: 40px;
+    line-height: 1.9;
+}
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+    }
+}
+@media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+    }
+} 
+@media (max-width: 1340px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h2{
+        font-size: 50px;
+        margin: 0 0 30px;
+    }
+}
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+
+    }
+    .hero-text{
+        text-align: center;
+    }
+    .hero-img img{
+        width: 550px;
+        height: auto;
+    }
+    .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 680px){
+    .hero-img img{
+        text-align: center;
+        height: auto;
+        width: 100%;
+    }
+    .navlist{
+        display: none;
+    }
+  
+}
+@media (max-width: 680px){
+    h2{
+        margin-top: 90px;
+    }
+}
+
+
